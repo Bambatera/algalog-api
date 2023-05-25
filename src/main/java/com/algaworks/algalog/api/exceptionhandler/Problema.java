@@ -1,5 +1,6 @@
 package com.algaworks.algalog.api.exceptionhandler;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -7,6 +8,7 @@ import java.util.List;
  *
  * @author Leandro Menezes
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Problema {
 
     private Integer status;
